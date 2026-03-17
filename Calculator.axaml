@@ -1,0 +1,24 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" Width="300" Height="200"
+        x:Class="AvaloniaApp.Calculator"
+        Title="Наибольшая цифра">
+    <StackPanel Margin="20" Spacing="10">
+        <TextBlock Text="Введите трехзначное число:" />
+        <TextBox Name="TextBox1" Text="432" />
+        
+        <Button Name="Button1" Content="Найти наибольшую цифру" 
+                HorizontalAlignment="Stretch" 
+                HorizontalContentAlignment="Center"
+                Click="Button1_OnClick" />
+        
+        <Separator />
+        
+        <TextBlock Name="ResultLabel" 
+                   Text="Наибольшая цифра: -" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Center" />
+    </StackPanel>
+</Window>
